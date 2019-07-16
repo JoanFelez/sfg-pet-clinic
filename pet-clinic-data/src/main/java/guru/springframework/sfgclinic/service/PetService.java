@@ -4,7 +4,7 @@ import guru.springframework.sfgclinic.model.Pet;
 
 import java.util.Set;
 
-public interface PetService {
+public interface PetService extends BaseService<Pet> {
 
     Pet findById(Long id);
 

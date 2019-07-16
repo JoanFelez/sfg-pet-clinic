@@ -4,11 +4,11 @@ import guru.springframework.sfgclinic.model.Vet;
 
 import java.util.Set;
 
-public interface VetService {
+public interface VetService extends BaseService<Vet> {
 
     Vet findById(Long id);
 
-    Vet save(Vet pet);
+    Vet save(Vet vet);
 
     Set<Vet> findAll();
 }

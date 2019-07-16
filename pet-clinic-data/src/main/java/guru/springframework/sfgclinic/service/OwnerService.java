@@ -4,7 +4,7 @@ import guru.springframework.sfgclinic.model.Owner;
 
 import java.util.Set;
 
-public interface OwnerService {
+public interface OwnerService extends BaseService<Owner> {
 
     Owner findByLastName(String name);
 
